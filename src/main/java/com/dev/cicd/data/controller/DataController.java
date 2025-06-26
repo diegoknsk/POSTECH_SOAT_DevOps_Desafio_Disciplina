@@ -20,6 +20,11 @@ public class DataController {
         public String version() {
                 return "The actual version is 1.0.0";
         }
+        
+        @GetMapping("/version2")
+        public String version2() {
+                return "The actual version is 1.0.0";
+        }
 
         @GetMapping("/nations")
         public JsonNode getRandomNations() {
